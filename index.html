@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+</head>
+<body style="margin:0; overflow:hidden;">
+
+<a-scene
+  webxr="requiredFeatures: hit-test, local-floor"
+  vr-mode-ui="enabled: true"
+  renderer="colorManagement: true;"
+>
+
+  <a-camera position="0 1.6 0"></a-camera>
+
+  <a-entity
+    gltf-model="Pikachu.glb"
+    position="0 0 -2"
+    scale="0.5 0.5 0.5"
+    animation="property: rotation; to: 0 360 0; loop: true; dur: 8000">
+  </a-entity>
+
+</a-scene>
+
+</body>
+</html>
